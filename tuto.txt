@@ -1,0 +1,61 @@
+Como primer comando en para configurar el usuario y correo electronico:
+Es con el siguiente comando
+#####
+git --config user.name "Nombre de usuario"
+git --config user.email "tu correo electronico"
+
+#Para iniciar git
+
+git init
+
+#Para renombrar la rama Master a Main
+
+git branch -m main
+
+#Para consultar el estado de la rama
+
+git status
+
+#Para añadir un nuevo archivo
+
+git add "nombre del archivo con extension"
+
+#Para realizar el primer commit se utiliza lo siguiente
+
+git commit -m "Mensaje que quieres que se desplegue en el commit"
+
+#Comando para consultar el historial del commit
+
+git log
+
+#Comando para ignorar ficheros o rutas que no quieres hacerle commit
+
+#crear un archivo con la siguiente extension 
+.gitignore
+#Dentro de ese achivo agregar el siguiente codigo
+**/"nombre del fichero o archivo"
+
+
+#Comando para comprobar el estado del fichero o archivo modificado
+
+git checkout "nombre del archivo sin comillas o fichero"
+
+#Configurar un alias para mostrar el arbol generado de manera compacta
+
+git config --global alias.arbol "log --graph --decorate --all --oneline"
+
+#Etiquetar un commit para hacer referencias a puntos importantes
+
+git tag ejercicio1
+
+#Para mostrar todas las etiquetas
+
+git tag #Se mostraran todas las tags
+
+#Para agregar una rama derivado de la rama principal
+
+git branch derivacion
+
+#para cambiar a esa rama
+
+git switch derivacion
