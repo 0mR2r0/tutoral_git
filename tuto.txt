@@ -48,6 +48,14 @@ git config --global alias.arbol "log --graph --decorate --all --oneline"
 
 git tag ejercicio1
 
+#Respaldar El git stash save, por cierto, por defecto solo guarda archivos que ya tengan tracking en git... si tambien quieres incluir archivos nuevos, lo que yo hago para tener control es agregarlos al index (con git add) y luego hago el git stash save.
+
+git stash save
+
+#Para actualizar el repositorio local con el remoto (si ya es un documento modificado haz un stash antes de hacer el pull)
+
+git pull
+
 #Para mostrar todas las etiquetas
 
 git tag #Se mostraran todas las tags
